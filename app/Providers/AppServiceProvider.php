@@ -6,6 +6,7 @@ namespace App\Providers;
 use App\User;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Schema;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -21,6 +22,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+    if (Schema::hasTable('users')){
         if(!is_null(User::all()->first())) {
             $enableRegister =False;
         }
@@ -28,5 +30,6 @@ class AppServiceProvider extends ServiceProvider
             $enableRegister =True;
         }
         View::share('enableRegister',  $enableRegister);
+        }
     }
 }

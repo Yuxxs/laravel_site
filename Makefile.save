@@ -105,7 +105,6 @@ composer-update:
 npm-install:
 	@make exec-bash cmd="npm install"
 	@make exec-bash cmd="npm run dev"
-
 key-generate:
 	@make exec cmd="php artisan key:generate"
 
@@ -199,3 +198,6 @@ phpinsights:
 	@echo "\033[32mRunning PHP Insights\033[39m"
 	@make exec cmd="php -d error_reporting=0 ./vendor/bin/phpinsights analyse --no-interaction --min-quality=100 --min-complexity=85 --min-architecture=100 --min-style=100"
 ###< Phpinsights PHP quality checks ###
+build-dev:
+	@make exec cmd="make build"
+	make build
