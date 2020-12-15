@@ -1,0 +1,46 @@
+body {
+
+    background-color: #030F0F; /* Цвет фона веб-страницы */
+    color: #FFFFFF; /* Цвет основного текста */
+}
+.navbar.navbar-expand-md
+{
+    background-color: #123c24; /* Цвет фона веб-страницы */
+    color: #FFFFFF; /* Цвет основного текста */
+
+}
+.card-body
+{
+    background-color: #1A2F1A; /* Цвет фона веб-страницы */
+    color: #FFFFFF; /* Цвет основного текста */
+
+}
+.card-header
+{
+    background-color: #1A1F1A; /* Цвет фона веб-страницы */
+    color: #FFFFFF; /* Цвет основного текста */
+
+}
+.nav-link
+{
+    color: #FFFFFF; /* Цвет основного текста */
+}
+.navbar-brand
+{
+    color: #FFFFFF; /* Цвет основного текста */
+}
+
+.btn.btn-link
+{
+    color: #FFFFFF; /* Цвет основного текста */
+}
+.image_link
+{
+    cursor: default;
+    width: auto;
+    height: 600px;
+    border-radius: 5%;
+    padding:3px;
+    border: 2px solid seagreen;
+
+}
